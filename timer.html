@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asana Flow Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.png" alt="Asana Flow logo" class="logo-mark" />
+        <span>Asana Flow</span>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a href="timer.html">Timer</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="timer" class="section alt">
+      <div class="container">
+        <h2>Practice Timer</h2>
+        <div class="timer-controls">
+          <div class="preset-buttons">
+            <button class="preset" data-minutes="5">5 min</button>
+            <button class="preset" data-minutes="10">10 min</button>
+            <button class="preset" data-minutes="20">20 min</button>
+          </div>
+          <div class="custom-time">
+            <label for="customMinutes">Custom (minutes)</label>
+            <input type="number" id="customMinutes" min="1" max="180" placeholder="e.g., 15" />
+            <button id="setCustom">Set</button>
+          </div>
+        </div>
+
+        <div class="timer-display" id="timerDisplay">00:00</div>
+        <div class="timer-actions">
+          <button id="startTimer">Start</button>
+          <button id="pauseTimer">Pause</button>
+          <button id="resetTimer">Reset</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Consult a physician before starting any new exercise program.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asana Flow Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.png" alt="Asana Flow logo" class="logo-mark" />
+        <span>Asana Flow</span>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a href="timer.html">Timer</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="library" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Asana Library</h2>
+          <input type="text" id="searchInput" placeholder="Search by English or Sanskrit name" />
+        </div>
+        <div id="asanaGrid" class="asana-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">Close</button>
+      <div class="video-wrapper">
+        <iframe id="videoFrame" src="" title="Yoga video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Consult a physician before starting any new exercise program.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
